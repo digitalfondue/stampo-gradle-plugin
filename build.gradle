@@ -34,4 +34,9 @@ pluginBundle {
             version = '1.2.1'
         }
     }
+
+    mavenCoordinates {
+        groupId = project.group
+        artifactId = 'stampo-gradle-plugin'
+    }
 }
