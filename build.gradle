@@ -1,16 +1,16 @@
-group = 'ch.digitalfondue.stampo'
-archivesBaseName = 'stampo-gradle-plugin'
-version = '0.0.2'
-
-apply plugin: 'groovy'
+plugins {
+    id 'com.gradle.plugin-publish' version '0.9.7'
+}
 
 repositories {
     jcenter()
 }
 
-plugins {
-    id 'com.gradle.plugin-publish' version '0.9.7'
-}
+apply plugin: 'groovy'
+
+group = 'ch.digitalfondue.stampo'
+archivesBaseName = 'stampo-gradle-plugin'
+version = '0.0.3'
 
 dependencies {
     compile 'ch.digitalfondue.stampo:stampo:1.2.1'
