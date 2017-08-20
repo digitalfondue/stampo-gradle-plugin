@@ -1,6 +1,6 @@
 group = 'ch.digitalfondue.stampo'
 archivesBaseName = 'stampo-gradle-plugin'
-version = '1.2.1'
+version = '0.0.1'
 
 apply plugin: 'groovy'
 
@@ -13,8 +13,6 @@ dependencies {
 
     compile localGroovy()
     compile gradleApi()
-
-    testCompile 'junit:junit:4.12'
 }
 
 plugins {
@@ -31,7 +29,7 @@ pluginBundle {
             displayName = 'Stampo Plugin'
             description = 'A gradle plugin for Stampo, static website generator'
             tags = ['java', 'static', 'html', 'documentation', 'blog']
-            version = '1.2.1'
+            version = project.version
         }
     }
 
