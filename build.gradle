@@ -1,0 +1,17 @@
+group = 'ch.digitalfondue.stampo'
+version = '1.2.1'
+
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'ch.digitalfondue.stampo:stampo:1.2.1'
+
+    compile localGroovy()
+    compile gradleApi()
+
+    testCompile 'junit:junit:4.12'
+}
